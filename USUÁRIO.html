@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tela de Usuário - Startkick </title>
+    <link rel="stylesheet" href="USUÁRIO.CSS">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="navigation">
+        <ul>
+            <li class="list">
+                <u span style="color:#fff"><span class="title"
+                        style="color:#fff; font-size: 30px; text-align: center;padding-left: 70px;">STARTKICK</span></u>
+            </li>
+            <li class="list">
+                <a href="INICIAL.html">
+                    <span class="icon"><ion-icon name="search-outline"></ion-icon></span>
+                    <span class="title">Home</span>
+                </a>
+            </li>
+            <li class="list active">
+                <a href="USUÁRIO.html">
+                    <span class="icon"><ion-icon name="thermometer-outline"></ion-icon></span>
+                    <span class="title">Tela do Usuário</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="PREFERÊNCIA.html">
+                    <span class="icon"> <ion-icon name="stats-chart-outline"></ion-icon></span>
+                    <span class="title">Suas Preferências</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="CADASTRO.html">
+                    <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                    <span class="title">Sair</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+
+        <div class="foto">
+            <img class="fotousuario" src="IMAGENS/icone de usuário.png">
+        </div>
+
+        USER019283 // 10 REVIEWS
+
+        <br>
+        <br>
+
+        <div class="descricao">
+
+            <div id="div_texto"></div>
+
+        </div>
+
+        <br>
+
+        <div class="botao">
+
+            <input type="text" id="input_descricao">
+            <button onclick="atualizar()">Atualizar</button>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="container2">
+
+        <div class="preferencia">
+
+            <div class="umdois">
+
+                <div class="um">
+                    TIME FAVORITO:
+                </div>
+
+                <div class="dois">
+                    LIGA FAVORITO:
+                </div>
+
+            </div>
+
+            <div class="tresquatro">
+
+                <div class="tres">
+                    SELEÇÃO FAVORITO:
+                </div>
+
+                <div class="quatro">
+                    ESTILO FAVORITO:
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="grafico">
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+    function atualizar() {
+
+        var texto = input_descricao.value
+
+        div_texto.innerHTML = `${texto}`
+    }
+
+</script>
